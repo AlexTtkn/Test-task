@@ -1,0 +1,18 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-wallet
+      author: alex
+      changes:
+        - createTable:
+            tableName: wallet
+            columns:
+              - column:
+                name: UUID
+                type: bigint
+                autoIncrement: true
+                constraints:
+                  primaryKey: true
+                  nullable: false
+              - column:
+                  name: amount
+                  type: bigint
