@@ -1,9 +1,4 @@
 spring:
-  profiles:
-    active: test
----
-
-spring:
   profiles: production
   datasource:
     url: jdbc:postgresql://localhost:5433/udb
