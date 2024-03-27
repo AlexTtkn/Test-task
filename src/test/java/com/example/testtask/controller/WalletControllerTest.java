@@ -33,7 +33,7 @@ public class WalletControllerTest {
     private MockMvc mockMvc;
 
 
-        @Test
+    @Test
     public void testWalletOperation() throws Exception {
         Wallet walletInRepo = new Wallet();
         walletInRepo.setId(UUID.randomUUID());
